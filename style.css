@@ -1,0 +1,124 @@
+:root {
+  --primary-color: #df4815;
+  --secondary-color: #f79e0f;
+  --primary: #ff0000;
+  --primary-dark: #0000;
+  --font-family: 'califr', sans-serif;
+}
+
+/* @import url(https://fonts.googleapis.com/css?family=Open+Sans); */
+
+@font-face {
+  font-family: "califr";
+  src: url(./assets/fonts/CALIFI.TTF);
+}
+
+a {
+  color: var(--secondary-color);
+}
+
+
+
+
+body {
+  background-image: url("./assets/images/fondDeCanyon.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+
+  font-family: var(--font-family);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  background-color: #c92727;
+  font-size: 2rem;
+
+  /* augmente la taille de la police de 20% */
+
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  /* pour fixer la largeur de chaque lien */
+  text-align: center;
+  /* pour centrer le texte à l'intérieur de chaque lien */
+  box-sizing: border-box;
+  /* pour inclure les bordures et les padding dans la largeur de chaque lien */
+}
+
+a .inscript {
+  color: var(--primary);
+  font-style: none;
+}
+
+nav #logo {
+  margin-right: 70px;
+  margin-left: 30px;
+  height: 20vh;
+  object-fit: contain;
+}
+
+.container-section-form {
+  position: absolute;
+  top: 40%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  height: 30vh;
+}
+
+.inscription-form {
+
+  font-size: 1.5rem;
+}
+
+.inscript {
+  font-size: 2rem;
+  color: var(--primary);
+}
+
+/* footer {
+  height: 20vh;
+  text-align: center;
+  color: var(--primary-light);
+} */
+
+footer p {
+  margin: 0;
+}
+
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #f5a623;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
+
+.footer-logo {
+  height: 50%;
+}
+
+.footer-copyright {
+  margin: 0;
+}
